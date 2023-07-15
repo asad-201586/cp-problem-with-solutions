@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+void palindrom(string str) {
+	int firstIndex = 0;
+	int lastIndex  = str.length() - 1;
+	bool isPalindrome = true;
+	while(lastIndex > firstIndex) {
+		if(str[firstIndex] != str[lastIndex]) {
+			isPalindrome = false;
+			break;
+		}
+		
+		firstIndex++;
+		lastIndex--;
+	}
+	
+	
+	if(isPalindrome) cout << str << " is palindrome" << endl;
+	else cout << str << " is not palindrome" << endl;
+}
+
+int main() {
+	string str;
+	cout << "Enter the string: ";
+	cin >> str; 
+	palindrom(str);
+	return 0;
+}

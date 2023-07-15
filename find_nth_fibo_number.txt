@@ -1,0 +1,18 @@
+#include<iostream>
+#include<math.h>
+#include<cmath>
+using namespace std;
+
+void findFiboNumber(int nTh) {
+	int x = nTh;
+	double fibo_n = (pow(1.618,x)-(pow(-0.618,x)))*(1/2.2360);
+	cout << round(fibo_n) << " ";
+} 
+
+int main() {
+	int x;
+	cout << "Enther nTh position of fibo series: ";
+	cin >> x;
+	findFiboNumber(x);
+	return 0;
+}
