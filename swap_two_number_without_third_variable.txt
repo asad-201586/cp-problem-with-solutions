@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+void swap(int x, int y) {
+	cout << "Input values: x = " << x << " , y = " << y << endl;
+	x = x+y;
+	y = x-y;
+	x = x-y;
+	cout << "After swap: x = " << x << " ,y = " << y << endl;
+}
+
+int main() {
+	int x,y;
+	cout << "Enter value of x and y to swap: ";
+	cin >>x>>y;
+	swap(x,y);
+	return 0;
+}
